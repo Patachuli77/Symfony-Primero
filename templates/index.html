@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/dist/css/master.css" rel="stylesheet" >
+        <title>{{ App.title }}</title>
+    </head>
+
+    <body class="full-page">
+        <main class="page-wrap">
+            <header class="site-bar">
+                <div class="site-bar__content">
+                    <h1 class="site-title">
+                        <a class="site-title__link" href="/">Jorge Ortega Rivera</a>
+                    </h1>
+                </div>
+
+                <div class="site-bar__nav">
+                    <nav class="site-navbar">
+                        <ul class="site-navbar__core">
+                            <li>
+                                <a class="menu-item" href="/skills">
+                                    What do I know?
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="/where">
+                                    Where am I from?
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="/hobbies">
+                                    Hobbies
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="/erasmus">
+                                    Why an erasmus?
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item" href="/family">
+                                    My family
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            {% block content %}
+            
+            {% endblock %}
+        </main>
+        <footer class="site-footer">
+            <div class="extended-icon">
+                <div class="extended-icon__base" style="background-image: url('/img/icons/mail.svg');"></div>
+            </div>
+            <p class="site-footer__content"> Jorge77.ortega@gmail.com</p>
+            <!--Icon is better-->
+        </footer>
+    </body>
+</html>

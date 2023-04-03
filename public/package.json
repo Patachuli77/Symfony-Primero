@@ -1,0 +1,28 @@
+{
+  "name": "proyeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/master.js",
+  "scripts": {
+    "css:scss": "sass src/scss:dist/css --no-source-map",
+    "build:css": "npm run css:scss",
+    "watch:css": "onchange \"src/scss\" -- npm run build:css",
+    "watch": "run-p watch:*",
+    "build": "run-p build:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "Your name",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "sass": "^1.43.2"
+  }
+}
