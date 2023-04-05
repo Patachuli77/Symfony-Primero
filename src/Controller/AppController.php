@@ -5,7 +5,7 @@
     use Symfony\Component\Routing\Annotation\Route;
     use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-    class Controlador extends AbstractController
+    class AppController extends AbstractController
     {
         #[Route('/')]
         public function home(): Response
