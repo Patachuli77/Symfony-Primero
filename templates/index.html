@@ -13,8 +13,12 @@
 
     <body class="full-page">
 
-        <div id="menu-toggler" class="menu-toggler">
-            <div class="extended-icon__base" style="background-image: url('/img/icons/menu.svg');"></div>
+        <div id="menu-toggler" class="icon-hamburger">
+            <div class="icon-hamburger__inner">
+                <div class="icon-hamburger__bar"></div>
+                <div class="icon-hamburger__bar"></div>
+                <div class="icon-hamburger__bar"></div>
+            </div>
         </div>
 
         <main class="page-wrap">
@@ -61,21 +65,22 @@
             {% block content %}
             
             {% endblock %}
+            <footer class="site-footer">
+
+                <div class="extended-icon">
+                    <div class="extended-icon__base" style="background-image: url('/img/icons/mail.svg');"></div>
+                </div>
+                <p class="site-footer__content"> Jorge77.ortega@gmail.com</p>
+    
+            </footer>
         </main>
 
-        <footer class="site-footer">
-
-            <div class="extended-icon">
-                <div class="extended-icon__base" style="background-image: url('/img/icons/mail.svg');"></div>
-            </div>
-            <p class="site-footer__content"> Jorge77.ortega@gmail.com</p>
-
-        </footer>
+       
 
         <section id="sliding-menu" class="sliding-menu">
            
             <div class="sliding-menu__inner">
-
+                
                 <header class="site-bar">
                     <div class="site-bar__content">
                         <h1 class="site-title">

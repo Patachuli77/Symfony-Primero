@@ -11,27 +11,62 @@
     padding-bottom: 98px;
 }
 /*menu*/
-.menu-toggler{
+.icon-hamburger{
     position:fixed;
-    top: 5px;
+    top: 15px;
     right: 5px;
-    height: 48px;
     width: 10%;
     z-index: 10;
+    &__inner{
+        height: 20px;
+    }
+    &__bar{
+        transition: all 0.2s ease-in-out;
+        position: relative;
+        height: 1px;
+        width: 100%;
+        background-color: #000;
+        &:nth-child(1){
+            top: 0px;
+        }
+        &:nth-child(2){
+            top: 7px;
+        }
+        &:nth-child(3){
+            top: 14px;
+        }
+    }
+    &.open{
+        .icon-hamburger__inner .icon-hamburger__bar{
+            &:nth-child(1){
+                position: absolute;
+                top: 7px;
+                left: auto;
+                right: 0;
+                width: 24px;
+                transform: rotate(135deg);
+            }
+            &:nth-child(2){
+                position: absolute;
+                top: 7px;
+                left: auto;
+                right: 0;
+                width: 24px;
+                transform: rotate(-135deg);
+            }
+            &:nth-child(3){
+                transition: all 0.2s linear;
+                opacity: 0;
+                right: -100%;
+            }
+        }
+    }
+    
     @media (min-width:$tablet-xs){
         display: none;
     }
 }
-.icon-hamburger{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
+
 .sliding-menu{
     position: fixed;
     background-color: $primary-color;
@@ -42,10 +77,10 @@
     right: -100%;
     bottom: auto;
     transition: all 0.3s linear;
-    &__open{
+    &--open{
         right: 0px; 
     }
-    &.sliding-menu__open{
+    &.sliding-menu--open{
         .sliding-menu__inner{
             opacity: 1;
             transition: opacity 0.3s linear 0.4s;
@@ -645,8 +680,9 @@
         line-height: $very-small-font-size-00+8px;
         padding: 0 3%;
         display: flex;
-        align-items: center;
         color:$contrast-color;
+        flex-direction: column;
+        justify-content: space-evenly;
         @media (min-width:$mobile-l){
             font-size: $very-small-font-size-04;
             line-height: $very-small-font-size-04+8px;
