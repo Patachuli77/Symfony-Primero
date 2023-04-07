@@ -1,14 +1,17 @@
 {% extends 'index.html' %}
 
 {% block content %} 
-<div class="section">
-    <div class="section-title">
+<section class="section">
+
+    <header class="section-title">
          <h1 class="section-title__content">
               Skills
          </h1>
-    </div>
+    </header>
+
     <div class="row-group">
-        <div class="column-group">
+
+        <article class="column-group">
 
             <div class="L-column-box">
                 <img class="L-column-box__icon" src="/img/icons/css.svg">
@@ -25,15 +28,17 @@
                 <h1 class="L-column-box__text">HTML</h1>
             </div>
 
-        </div>
+        </article>
 
-        <div class="column-box">
+        <article class="column-box">
             <img class="column-box__image" src="/img/icons/ordenador.png">
-        </div>
-        <div class="column-group">
+        </article>
+
+        <article class="column-group">
+
             <div class="R-column-box">
                 <img class="R-column-box__icon" src="/img/icons/js.png">
-                    <h1 class="R-column-box__text">JavaScript</h1>
+                <h1 class="R-column-box__text">JavaScript</h1>
             </div>
 
             <div class="R-column-box">
@@ -41,18 +46,21 @@
                 <h1 class="R-column-box__text">PHP</h1>
             </div>
 
-          
-
             <div class="R-column-box">
+                
                 <div class="R-column-box__group-icons">
                     <img class="R-column-box__icon" src="/img/icons/c++.svg">
                     <img class="R-column-box__icon" src="/img/icons/java.svg">
                     <img class="R-column-box__icon" src="/img/icons/ts.svg">
                 </div>
                 <h1 class="R-column-box__text">Basic C++, Java and TypeScript </h1>
+                
             </div>
-        </div>
+
+        </article>
+
     </div>
-</div>
+
+</section>
 
 {% endblock %}

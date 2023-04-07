@@ -147,7 +147,7 @@
     padding: 0px 5.2659294365%;
   }
 }
-.site-bar__nav__darker {
+.site-bar__nav--darker {
   background-color: #333232;
 }
 
@@ -162,7 +162,7 @@
   color: #000;
   text-decoration: none;
 }
-.site-title__link__inverted {
+.site-title__link--inverted {
   color: #fff;
 }
 @media (min-width: 768px) {

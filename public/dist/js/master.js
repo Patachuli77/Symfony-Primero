@@ -79,6 +79,3 @@ jQuery(function() {
 
     slidingMenu.run();
 });
-
-
-// ...

@@ -1,41 +1,53 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <div class="section">
-        <div class="section-title">
+    <section class="section">
+
+        <header class="section-title">
              <h1 class="section-title__content">
                   Hobbies
              </h1>
-        </div>
+        </header>
+
         <div class="row-group">
-            <div class="tile">
-                <div class="tile__wraper" style="background-image: url('/img/correr.jpg');">  
-                </div>
+
+            <article class="tile">
+               
+                <div class="tile__wraper" style="background-image: url('/img/correr.jpg');"></div>
+               
                 <div class="round-box">
                     <p class="round-box__content">
                         Running/Races
                     </p>
                 </div>
-            </div>
-            <div class="tile">
-                <div class="tile__wraper" style="background-image: url('/img/esgrima.jpg');">   
-                </div>
+
+            </article>
+
+            <article class="tile">
+                
+                <div class="tile__wraper" style="background-image: url('/img/esgrima.jpg');"></div>
+               
                 <div class="round-box">
                     <p class="round-box__content">
                         Fencing
                     </p>
                 </div>
-            </div>
-            <div class="tile">
-                <div class="tile__wraper" style="background-image: url('/img/scouts.jpg');">
-                </div>
+
+            </article>
+
+            <article class="tile">
+               
+                <div class="tile__wraper" style="background-image: url('/img/scouts.jpg');"></div>
+                
                 <div class="round-box">
                     <p class="round-box__content">
                         Scouts
                     </p>
                 </div>
-            </div>
+                
+            </article>
+
         </div>
         
-    </div>
+    </section>
 {% endblock %}

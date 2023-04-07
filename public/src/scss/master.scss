@@ -136,7 +136,7 @@
         @media (min-width:$desktop-m){
             padding: 0px 5.26592943654555%;
         }
-        &__darker{
+        &--darker{
             background-color: $secondary-color;
         }
     }
@@ -151,7 +151,7 @@
     &__link{
         color: $stronger-secondary;
         text-decoration: none;
-        &__inverted{
+        &--inverted{
             color: $contrast-color;
         }
     }

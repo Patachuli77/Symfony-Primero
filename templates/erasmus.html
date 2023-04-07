@@ -1,55 +1,70 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <div class="section">
-        <div class="section-title">
+    <section class="section">
+
+        <header class="section-title">
              <h1 class="section-title__content">
                   Erasmus Reasons
              </h1>
-        </div>
+        </header>
+
         <div class="row-group">
-            <div class="tile-wraper">
+
+            <article class="tile-wraper">
                 <div class="large-tile">
+
                     <div class="flip-front">
                         <p class="tile-title">
                             First Reason
                         </p>
                     </div>
+
                     <div class="flip-back">
                         <img src="/img/trabajo.png" class="flip-back__image">
                         <h1 class="flip-back__title">Test myself</h1>
                         <p class="flip-back__text">I love challenging myself with new things, so when this opportunity came my way I couldn't turn it down.</p>
                     </div>
+                    
                 </div>
-            </div>
-            <div class="tile-wraper">
+            </article>
+
+            <article class="tile-wraper">
                 <div class="large-tile">
+
                     <div class="flip-front">
                         <p class="tile-title">
                             Second Reason
                         </p>
                     </div>
+
                     <div class="flip-back">
                         <img src="/img/globo.png" class="flip-back__image">
                         <h1 class="flip-back__title">Learn From Outside</h1>
                         <p class="flip-back__text">I have always lived in Spain, and although I love it, I belive that there is a lot to learn outside.</p>
                     </div>
+
                 </div>
-            </div>
-            <div class="tile-wraper">
+            </article>
+
+            <article class="tile-wraper">
                 <div class="large-tile">
+
                     <div class="flip-front">
                         <p class="tile-title">
                             Third Reason
                         </p>
                     </div>
+
                     <div class="flip-back">
                         <img src="/img/fun.png" class="flip-back__image">
                         <h1 class="flip-back__title">Have Fun</h1>
                         <p class="flip-back__text">Although I know that I came here for my internship, I think it would be a shame, if after 90 days, I couldn't say that I had a good time.</p>
                     </div>
+
                 </div>
-            </div> 
+            </article> 
+
         </div>
-    </div>
+    </section>
 {% endblock %}
